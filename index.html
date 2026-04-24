@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo de Moura</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <svg class="line-svg" viewBox="0 0 1000 3000" preserveAspectRatio="none">
+        <path id="linePath"></path>
+    </svg>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">INÍCIO</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a target="_blank" href="https://wa.me/5548991286349">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="Hero slide" id="inicio">
+            <div class="divMaster">
+
+                <!-- HERO -->
+                <div class="Titulo">
+                    <div class="GitWhats">
+                        <a href="https://github.com/desenvleo" target="_blank"><button>GITHUB</button></a>
+                        <a href="http://wa.me/5548991286349" target="_blank"><button>WHATSAPP</button></a>
+                    </div>
+                    <div class="divShadow">
+                        <p class="creative">CREATIVE DEVELOPMENT</p>
+                        <h1>LEONARDO DE MOURA</h1>
+                        <div class="Pilares">
+                            <p>PROGRAMAÇÃO</p>
+                            <img width="35" height="30" src="https://img.icons8.com/pastel-glyph/64/source-code--v1.png"
+                                alt="source-code--v1" />
+                            <p>WEB DESIGN</p>
+                            <img width="35" height="30" src="https://img.icons8.com/pastel-glyph/64/source-code--v1.png"
+                                alt="source-code--v1" />
+                            <p>PRESENÇA DIGITAL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sliderPai">
+            <div class="slider">
+
+                <section class="fotoAreas slide">
+                    <div class="fotoareas">
+                        <p class="Sobre">
+                            Leonardo foca na criação de páginas:
+                        </p>
+                        <ul>
+                            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABj0lEQVR4nO2XQUoDMRSGw+jaFj1DhZb2Fm515xXcWxeew03dC65cSRdCu7J4BkWtp6jgzk8CKYbpZKZjkkkr74PQQtKX99J/3p9RShCE4ABt4AJ4N0N/b6tNBzgEroBPVvkCboCB2iSADDgBpsC3SVZ/ToBjMya5uan5TZYy8T3gDHgpOOV+wfqO+XcW1voP4BI4SC2TZSL7NQp/bkxeRiZHwNiSguYJOAV2IsTcbVwmHvt0gsrLVyaRDmzQuEw8CslqywuYWQv1yV8DPZUYoGdysdUw2/YCHtN0hfWTzrzkXNEVUj3EfZ+AUU2H2AcWQ17Juh6ep9WUOdr3+iHwCtzm5lrAOTBfp3s5usncxGjl1t6ZAod/eo9wbHZfIoWyK3PZVTtzxHyo3dJDaNIhr9oyIYAT6wRGQLdqM0cCS3m9mbEikxqxuiaXRR0n9iogJBQXIE4cBcSJHYgTb5kTj0qcWM+JExciTmwhTmwhTswv4sQuECf+r04cUl6pnqtKYjhxMkI5cXJCOrEgCKqUH+Yki6Xd0DKVAAAAAElFTkSuQmCC"
+                                    alt="layers">MODERNAS</li>
+                            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABj0lEQVR4nO2XQUoDMRSGw+jaFj1DhZb2Fm515xXcWxeew03dC65cSRdCu7J4BkWtp6jgzk8CKYbpZKZjkkkr74PQQtKX99J/3p9RShCE4ABt4AJ4N0N/b6tNBzgEroBPVvkCboCB2iSADDgBpsC3SVZ/ToBjMya5uan5TZYy8T3gDHgpOOV+wfqO+XcW1voP4BI4SC2TZSL7NQp/bkxeRiZHwNiSguYJOAV2IsTcbVwmHvt0gsrLVyaRDmzQuEw8CslqywuYWQv1yV8DPZUYoGdysdUw2/YCHtN0hfWTzrzkXNEVUj3EfZ+AUU2H2AcWQ17Juh6ep9WUOdr3+iHwCtzm5lrAOTBfp3s5usncxGjl1t6ZAod/eo9wbHZfIoWyK3PZVTtzxHyo3dJDaNIhr9oyIYAT6wRGQLdqM0cCS3m9mbEikxqxuiaXRR0n9iogJBQXIE4cBcSJHYgTb5kTj0qcWM+JExciTmwhTmwhTswv4sQuECf+r04cUl6pnqtKYjhxMkI5cXJCOrEgCKqUH+Yki6Xd0DKVAAAAAElFTkSuQmCC"
+                                    alt="layers">ESTRATÉGICAS</li>
+                            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABj0lEQVR4nO2XQUoDMRSGw+jaFj1DhZb2Fm515xXcWxeew03dC65cSRdCu7J4BkWtp6jgzk8CKYbpZKZjkkkr74PQQtKX99J/3p9RShCE4ABt4AJ4N0N/b6tNBzgEroBPVvkCboCB2iSADDgBpsC3SVZ/ToBjMya5uan5TZYy8T3gDHgpOOV+wfqO+XcW1voP4BI4SC2TZSL7NQp/bkxeRiZHwNiSguYJOAV2IsTcbVwmHvt0gsrLVyaRDmzQuEw8CslqywuYWQv1yV8DPZUYoGdysdUw2/YCHtN0hfWTzrzkXNEVUj3EfZ+AUU2H2AcWQ17Juh6ep9WUOdr3+iHwCtzm5lrAOTBfp3s5usncxGjl1t6ZAod/eo9wbHZfIoWyK3PZVTtzxHyo3dJDaNIhr9oyIYAT6wRGQLdqM0cCS3m9mbEikxqxuiaXRR0n9iogJBQXIE4cBcSJHYgTb5kTj0qcWM+JExciTmwhTmwhTswv4sQuECf+r04cUl6pnqtKYjhxMkI5cXJCOrEgCKqUH+Yki6Xd0DKVAAAAAElFTkSuQmCC"
+                                    alt="layers">RESPONSIVAS</li>
+                            Para empresas que desejam fortalecer sua presença digital e converter leads.
+                        </ul>
+                        <p>
+                            Desenvolve soluções digitais rápidas e funcionais,<br> com foco em transmitir
+                            credibilidade, destacar marcas e gerar resultados online.
+                            <br><br>
+                            Explore mais ↓
+                        </p>
+                        <a target="_blank" href="https://wa.me/5548991286349">Solicitar Orçamento 🏷️</a>
+                    </div>
+
+                </section>
+
+
+
+
+                <!-- SERVIÇOS -->
+                <section class="Servicos slide" id="servicos">
+                    <h2>SERVIÇOS</h2>
+
+                    <div class="gridLayout">
+
+                        <div class="sitesAntigos">
+                            <svg width="30" height="30" viewBox="0 0 24 24" stroke="#24B6C7" stroke-width="1.5"
+                                fill="none">
+                                <path d="M21 12a9 9 0 1 1-3-6.7" />
+                                <polyline points="21 3 21 9 15 9" />
+                            </svg>
+                            <p>Reformulação de sites antigos</p>
+                        </div>
+
+                        <div class="Animacoes">
+                            <svg width="30" height="30" viewBox="0 0 24 24" stroke="#24B6C7" stroke-width="1.5"
+                                fill="none">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                            <ul>
+                                <li>Animações minimalistas e modernas</li>
+                                <li>Experiências interativas que destacam sua marca</li>
+                            </ul>
+                        </div>
+
+                        <div class="Manutencao">
+                            <svg width="30" height="30" viewBox="0 0 24 24" stroke="#24B6C7" stroke-width="1.5"
+                                fill="none">
+                                <path d="M14 7l3-3 3 3-3 3" />
+                                <path d="M3 21l9-9" />
+                                <circle cx="6" cy="18" r="2" />
+                            </svg>
+                            <ul>
+                                <li>Manutenções recorrentes</li>
+                                <li>Atualizações</li>
+                                <li>Suporte</li>
+                            </ul>
+                        </div>
+
+                        <div class="Integracao">
+                            <svg width="30" height="30" viewBox="0 0 24 24" stroke="#24B6C7" stroke-width="1.5"
+                                fill="none">
+                                <path d="M10 13a5 5 0 0 1 0-7l1-1a5 5 0 0 1 7 7l-1 1" />
+                                <path d="M14 11a5 5 0 0 1 0 7l-1 1a5 5 0 0 1-7-7l1-1" />
+                            </svg>
+                            <ul>
+                                <li>Formulários automatizados</li>
+                                <li>WhatsApp</li>
+                                <li>Email</li>
+                            </ul>
+                        </div>
+
+                        <div class="landingPage">
+                            <h3>Landing Pages</h3>
+                            <ul>
+                                <li>Captura de leads</li>
+                                <li>Venda de serviços diversos</li>
+                                <li>Divulgação de eventos sociais</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- PROJETOS -->
+
+                <section class="Projetos slide" id="projetos">
+                    <div class="cards explicacao">
+                        <h3>Projetos</h3>
+                        <p>Alguns projetos criados para uma escola de dança, uma empresa de direito ambiental e uma
+                            empresa
+                            especializada em divulgações de eventos nacionais.</p>
+                    </div>
+                    <div class="projetosContainer">
+
+                        <div class="card impar">
+                            <a target="_blank" href="https://desenvleo.github.io/DanceImparNew2026/"></a>
+                        </div>
+                        <div class="card specterlaw">
+                            <a target="_blank" href="https://desenvleo.github.io/specterlaw/"></a>
+                        </div>
+                        <div class="card festaemfloripa">
+                            <a target="_blank" href="https://desenvleo.github.io/festaemfloripa/"></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="CTA slide">
+                    <a class="CTA-a" target="_blank" href="https://wa.me/5548991286349">TIRE SEU PROJETO DO PAPEL! <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEAElEQVR4nO3YaYiVZRQH8HdsM80WGRQqSMvBkIpqkBaiBYPK9sX8ENlGRRaVWn1ogYxsLyLCAiki64MWhEYLBpKUFQXZ8qEoWiwrKysmyEqrXzzNufTMy525985M5oX3DwP3fd73/M85z3O2Z4qiQoUKFSpUqFChQrNAJy7D0/gAG7EZX+NFXIGxQ1UyCjsMiaR/7sPD+GR0I/yIC1pVMAH3Yl1G9A2W4tyh7A62wQy8nnEnR57DeZiCbbEz9sP5WJ19e1Gzio7Hpkww/f6jtDtJ8UrMwd5N8o7BVfg04/kBt2OPBrIduD9kvm3WkesyRQ/E7myPfTE7Yva3kmPvYQGmJqUlvj1xJ37Kvv8ouEY3adNx+CxkV7SSEysypa/igDq7exYex4aSU1/hYczEE6XTfRmnYEQLRWBxJv9aS2EdRzkrHWMWSvclB/qJ+aNwT+x0GZvCoYNb0D8a10eCJ/yCuUlX006UCHfDQvyZ7fbMfhTPLjmSjLirUfznSNURV2J9xvMCJhbDgYj9tzLylzAZu+O2SNpBxX/mwKVYWwqjY4oGOXBQSsJ+P6ovNyIMrCXt7/GXx/+pzcZ/dpJzSmX+XZxcDISo3z0h8BcewU4DCvV15CS8WYr/J9HdDEfGtQtuwHcZ19s4s6mNwJch9CF+zX4fOIDMjrgkRoc8/u/AXq04EHzjsiQWzW56uWw3Ivn4H1GORRfWxHNy6vLSt+Mxv7Rrn0QyNnWK/dhwS3CtwdGDJbkpSJ6P55FRlWpYjmlYVGp6q+PYB1f++uZErTAcOhSizqjJKT+mZOtnZ7lTQxpLnmpVYUwCU/t5l0aUhFWDdiIjq53AotL6RDwanfzuVmt3DHnzooQurPN+O3weuk8cDke6osGlvBg3DHwToqv3DDSh4px4935LiT0Q8EyQ3jxI+Y4Y5JZnXV/2u7vO9+/Eu1mD0VkXOCJI0yw1sgW5FH43lkaRjdGPuuOUN5c542qQ8EUKsWb1NQW8EeQXN/hucnTfV6JI5KX4mto0iv1roVOHI91dEuYWww295VQ0pzkxwR6GE3B1jM/J2Bw/47Eo0X06cNwcExbXmdNqesb8F450YInGWB/GpxI9agC+NOYnzCutp+txwoJhd6LkzIwwdFWU3mfxIC5MF6oWLkG18JmWrU2KfpRyZ3yxtUPvhtTmp85sPd0UEx4q2gF6e0nC2tJwuDFOpKtoB+D0cGRZtnZrrC0t2gV6p+SE+dlwuGHIw+GWRjqJMPqMeE7lPGFl0U7w7zC4T0zY38fz9KJdgLFhdE/cb5Zld5jhGQ63BHBkGL4uu8+nf1BMKtoJOK00CSSHDinaDdg1TiJNxNemC9b/bVOFChUqFFsV/gaScobPJXj4jAAAAABJRU5ErkJggg=="
+                            alt="airplane-take-off"></a>
+                </div>
+            </div> <!-- fechamento do slider -->
+        </div> <!--fechamento do sliderPai -->
+        <!-- SETA -->
+    </main>
+    <footer>
+        <div class="divfooter">
+
+        </div>
+    </footer>
+    <script>
+
+
+        document.querySelectorAll('nav a').forEach(link => link.addEventListener('click', function (e) {
+
+            const targetId = this.getAttribute('href');
+
+            if (!targetId || !targetId.startsWith('#')) return;
+
+            e.preventDefault();
+            const section = document.querySelector(targetId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                })
+            }
+
+        }));
+
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray(".slide").forEach((section) => {
+            if (section.classList.contains("Hero")) return;
+
+            gsap.from(section, {
+                y: 120,
+                opacity: 0,
+                scale: 0.98,
+                duration: 2.5,
+                scrub: true,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+
+        gsap.from(".divShadow", {
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            ease: "power2.out"
+        });
+        gsap.from(".divShadow > *", {
+            opacity: 0,
+            y: 15,
+            duration: 1,
+            ease: "power2.out",
+            stagger: 0.1,
+            delay: 0.2
+        });
+        const el = document.querySelector(".Titulo h1");
+        const text = el.textContent;
+
+        el.innerHTML = [...text]
+            .map(letter => `<span class="char">${letter}</span>`)
+            .join("");
+
+        gsap.from(".Titulo h1 .char", {
+            opacity: 0,
+            y: 8,
+            duration: 4,
+            ease: "power2.out",
+            stagger: 0.099
+        });
+
+        window.addEventListener("load", () => {
+
+            const path = document.querySelector("#linePath");
+            const sections = document.querySelectorAll(".slide");
+
+            let d = "";
+
+            let prevX = 100;
+            let prevY = 0;
+
+            d += `M ${prevX} ${prevY}`;
+
+            sections.forEach((section, index) => {
+
+                const rect = section.getBoundingClientRect();
+                const scrollTop = window.scrollY;
+
+                const y = rect.top + scrollTop + rect.height / 2;
+
+                const esquerda = 50;
+                const direita = window.innerWidth - 50;
+
+                const isServicos = section.classList.contains("Servicos");
+
+                let x;
+                const meioY = (prevY + y) / 2;
+
+                if (isServicos) {
+                    x = window.innerWidth / 2;
+
+                    const curvaGrande = 200;
+
+                    d += ` 
+            C ${prevX} ${meioY},
+              ${x} ${meioY + curvaGrande},
+              ${x} ${y}
+        `;
+                } else {
+
+                    x = index % 2 === 0 ? direita : esquerda;
+
+                    d += ` 
+            C ${prevX} ${meioY},
+              ${x} ${meioY},
+              ${x} ${y}
+        `;
+                }
+
+                prevX = x;
+                prevY = y;
+
+            });
+            path.setAttribute("d", d);
+
+            const length = path.getTotalLength();
+
+            path.style.strokeDasharray = length;
+            path.style.strokeDashoffset = length;
+
+            gsap.to(path, {
+                strokeDashoffset: 0,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: document.body,
+                    start: "top top",
+                    end: "bottom bottom",
+                    scrub: true
+                }
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

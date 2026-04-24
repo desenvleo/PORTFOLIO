@@ -1,0 +1,687 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    background-image: url(/imagemdefundo3.png);
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    justify-content: center;
+    align-items: end;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
+    list-style: none;
+    font-size: 14px;
+}
+
+header ul a {
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    opacity: 0.8;
+    color: #05A575;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Como não tem como animar text-decoration, uso o pseudo-classe ::after */
+header ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    background: #0ef1f5d5;
+    transition: width 0.6s;
+    width: 0%;
+}
+
+header ul a:hover {
+    opacity: 1;
+    color: #0ef1f5d5;
+}
+
+header ul a:hover::after {
+    width: 100%;
+}
+
+.fotoareas,
+.impar,
+.specterla,
+.festaemfloripa {
+    background-color: #0a1a1c;
+}
+
+/* .scrollArrow {
+    position: fixed;
+    bottom: 90px;
+    right: 90px;
+    cursor: pointer;
+    z-index: 100;
+    animation: floatArrow 3s ease-in-out infinite;
+    transition: opacity 1s ease;
+}
+
+.scrollArrow.hidden {
+    opacity: 0;
+    pointer-events: none;
+} */
+
+/* 
+.scrollArrow svg {
+    width: 100px;
+    height: 100px;
+    stroke: #0c575f;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+
+@keyframes floatArrow {
+    0% {
+        transform: translateY(0);
+    }
+
+
+    50% {
+        transform: translateY(8px);
+    }
+
+
+    100% {
+        transform: translateY(0);
+    }
+} */
+
+.Titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+    height: auto;
+    padding: 40px 0;
+    margin: auto;
+}
+
+.divShadow {
+    display: flex;
+    box-shadow: 2px 2px 8px 0px rgba(4, 25, 27, 0.795);
+    border: none;
+    /* padding: 100px; */
+    padding: 40px 50px;
+    max-width: 90%;
+    border-radius: 20px;
+    flex-direction: column;
+    background: linear-gradient(70deg,
+            rgb(51, 10, 83),
+            rgba(1, 212, 142, 0.842),
+            rgb(51, 10, 83));
+
+    background-size: 300% 300%;
+
+    animation: gradientMoveShadow 5s ease infinite;
+}
+
+/* .divShadow div,
+.divShadow p,
+.divShadow img {
+    opacity: 0;
+} */
+
+@keyframes gradientMoveShadow {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.Titulo h1 {
+    font-size: 70px;
+    color: #010f0ee5;
+    font-family: "Edu QLD Hand", cursive;
+
+
+}
+
+.creative {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 200;
+    color: #06191A;
+    /* opacity: 0; */
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.Titulo p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+
+}
+
+.Pilares {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+
+}
+
+/* ------------------------------------------- */
+
+.fotoareas {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 32px;
+    box-shadow: 2px 2px 8px 0px rgba(4, 25, 27, 0.795);
+    padding: 3em;
+    border-radius: 20px;
+    background-image: url(/newpiccc.png),
+        linear-gradient(45deg, rgba(1, 212, 142, 0.842), rgb(51, 10, 83), rgba(1, 212, 142, 0.842));
+    background-position: right center;
+    background-repeat: no-repeat;
+    animation: gradientMove 10s ease infinite;
+    background-size: contain, 400% 400%;
+    border: none;
+}
+
+
+@keyframes gradientMove {
+
+    0% {
+        background-position: right center, 0% 50%;
+    }
+
+    50% {
+        background-position: right center, 100% 50%;
+    }
+
+    100% {
+        background-position: right center, 0% 50%;
+    }
+}
+
+
+
+.fotoareas p,
+.fotoareas ul {
+    text-align: left;
+    max-width: 500px;
+    align-self: flex-start;
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    text-indent: 1em;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+}
+
+.fotoareas img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.fotoareas a {
+    text-decoration: none;
+    align-self: flex-start;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: #12124b;
+    padding: 20px 12px;
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.4s, opacity 0.3s;
+    opacity: 0.9;
+}
+
+.fotoareas a:hover {
+    background-color: #121296;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+/* ------------------------------------------- */
+
+.Servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 70px auto;
+    font-variant: small-caps;
+    color: rgba(245, 245, 245, 0.87);
+    position: relative;
+    min-height: 100vh;
+    /* height: auto; */
+}
+
+.gridLayout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Servicos h2 {
+    font-variant: small-caps;
+    color: #36b4c5d7;
+    font-family: "Edu QLD Hand", cursive;
+    margin-bottom: 2em;
+    position: relative;
+    width: 80%;
+}
+
+.Servicos h2:after {
+
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;
+    height: 1px;
+    background: #0ef1f5d5;
+    transition: width 0.6s;
+    width: 0%;
+}
+
+.Servicos h2:hover::after {
+    opacity: 1;
+    width: 100%;
+    cursor: pointer;
+}
+
+.gridLayout div {
+    padding: 20px 20px;
+    flex-direction: column;
+    gap: 12px;
+    background-image: linear-gradient(30deg,
+            rgb(51, 10, 83),
+            rgba(1, 212, 142, 0.842),
+            rgb(51, 10, 83));
+    ;
+    font-size: 1.2em;
+    border-radius: 24px;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: gradientMoveShadow 30s ease-in-out infinite;
+    background-size: 400% 400%;
+    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    box-shadow: 2px 4px 4px 0px rgba(6, 56, 65, 0.61);
+    will-change: transform;
+    transition: color 0.8s;
+}
+
+.gridLayout div:hover {
+    opacity: 1;
+    outline: 3px solid rgba(1, 48, 56, 0.719);
+    cursor: pointer;
+    color: rgba(4, 21, 29, 0.952);
+
+}
+
+.landingPage {
+    grid-column: span 3;
+}
+
+.sitesAntigos {
+    grid-column: span 3;
+    font-weight: 500;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+}
+
+/* --------------------------------- */
+
+.Projetos {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projetosContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.card {
+    position: relative;
+}
+
+
+.card::after {
+    content: "Ver projeto";
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: #d3eef1;
+    font-size: 32px;
+    font-variant: small-caps;
+    font-weight: 500;
+    border-radius: 24px;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.card a {
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+
+.impar {
+    background-image: url(danceimpar.png);
+    width: 200px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+}
+
+.specterlaw {
+    background-image: url(specterlaw.png);
+    width: 200px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+}
+
+.festaemfloripa {
+    background-image: url(festaemfloripa.png);
+    width: 200px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+}
+
+.explicacao {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px;
+    text-align: center;
+    color: #9df1dede;
+    gap: 40px;
+}
+
+.explicacao p {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.explicacao h3 {
+    font-size: 40px;
+    color: #1c99aa;
+    font-variant: small-caps;
+    position: relative;
+    font-family: "Edu QLD Hand", cursive;
+}
+
+.explicacao h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;
+    height: 1px;
+    background: #74eff1ab;
+    transition: width 0.6s;
+    width: 0%;
+}
+
+.explicacao h3:hover::after {
+    opacity: 1;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.CTA {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+
+}
+
+.CTA-a {
+    text-decoration: none;
+    background-image: linear-gradient(to right, #1e0b64, rgba(8, 92, 39, 0.753));
+    padding: 50px 40px;
+    color: rgba(245, 245, 245, 0.9);
+    border-radius: 24px;
+    border: none;
+    box-shadow: 8px 0px 16px rgba(3, 10, 41, 0.179),
+        -1px -1px 3px rgba(10, 1, 90, 0.26) inset;
+    font-weight: 300;
+    font-size: 18px;
+    /* transition: all 1s; */
+    transition: transform 1s;
+    will-change: transform;
+}
+
+.CTA-a:hover {
+    color: rgba(245, 245, 245, 0.74);
+    background: #06191A;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.CTA::before {
+    display: block;
+    left: 0;
+    align-items: center;
+    content: "";
+    height: 1px;
+    background-color: rgba(245, 245, 245, 0.74);
+    width: 0%;
+    transition: width 1s;
+    margin-right: 4em;
+}
+
+.CTA:hover::before {
+    width: 25%;
+}
+
+.CTA::after {
+    display: block;
+    left: 0;
+    align-items: center;
+    content: "";
+    height: 1px;
+    background-color: rgba(245, 245, 245, 0.74);
+    width: 0%;
+    transition: width 1s;
+    margin-left: 4em;
+}
+
+.CTA:hover::after {
+    width: 25%;
+}
+
+.CTA img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-left: 0.4em;
+}
+
+/* ------------------------ */
+
+.sliderPai {
+    width: 100%;
+}
+
+.slider {
+    display: block;
+    /* height: 50vh; */
+}
+
+.slide {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 8vw;
+    position: relative;
+    z-index: 1000;
+}
+
+.line-svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: luminosity;
+}
+
+#linePath {
+    fill: none;
+    stroke: #2A2B5B;
+    stroke-width: 20;
+    filter: drop-shadow(0 0 15px #027577);
+    opacity: 0.9;
+    transition: opacity 0.4s, filter 0.4s;
+}
+
+/* 👉 conteúdo por cima */
+.slide,
+header,
+footer,
+.divMaster,
+.fotoareas,
+.Servicos {
+    position: relative;
+    z-index: 2;
+}
+
+.GitWhats {
+    display: flex;
+    gap: 3em;
+    position: absolute;
+    left: 37%;
+    top: 0%;
+}
+
+.GitWhats button {
+    padding: 20px 40px;
+    border-radius: 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 400;
+    overflow: hidden;
+    background: rgba(20, 20, 30, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgba(245, 245, 245, 0.733);
+    font-weight: 500;
+    box-shadow:
+        0 4px 12px rgba(31, 4, 92, 0.705),
+        inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    transition: all 0.5s ease;
+}
+
+.GitWhats button::before {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -50%;
+    width: 400%;
+    height: 400%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(4, 89, 187, 0.35),
+            transparent);
+    transform: rotate(25deg);
+    transition: 0.6s;
+}
+
+.GitWhats button:hover::before {
+    top: 120%;
+    left: 120%;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.GitWhats button:hover {
+    opacity: 1;
+    font-weight: 700;
+    color: #077e60;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 3px rgba(255, 255, 255, 0.4);
+}
