@@ -685,3 +685,111 @@ footer,
         0 15px 40px rgba(0, 0, 0, 0.4),
         inset 0 1px 3px rgba(255, 255, 255, 0.4);
 }
+
+/*  MOBILE FIRST --------------------- */
+
+@media (max-width: 768px) {
+
+    /* NAV */
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    /* HERO */
+    .Titulo h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .creative {
+        font-size: 18px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .Pilares {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* BOTÕES GITHUB / WHATS */
+    .GitWhats {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .GitWhats button {
+        width: 100%;
+        max-width: 250px;
+        padding: 14px;
+    }
+
+    /* FOTO AREAS */
+    .fotoareas {
+        width: 100%;
+        padding: 2em 1.5em;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .fotoareas p,
+    .fotoareas ul {
+        width: 100%;
+        text-align: left;
+    }
+
+    /* SERVIÇOS */
+    .gridLayout {
+        grid-template-columns: 1fr;
+    }
+
+    .landingPage,
+    .sitesAntigos {
+        grid-column: span 1;
+    }
+
+    /* PROJETOS */
+    .projetosContainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* CTA */
+    .CTA {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .CTA-a {
+        padding: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* TEXTO */
+    .explicacao {
+        margin: 40px 20px;
+    }
+
+    .explicacao p {
+        width: 100%;
+    }
+
+    /* LINHA SVG (IMPORTANTE) */
+    #linePath {
+        stroke-width: 10;
+        opacity: 0.5;
+    }
+}

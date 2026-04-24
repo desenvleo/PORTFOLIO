@@ -277,15 +277,17 @@
 
                 const y = rect.top + scrollTop + rect.height / 2;
 
-                const esquerda = 50;
-                const direita = window.innerWidth - 50;
+                const isMobile = window.innerWidth < 768;
+
+                const esquerda = isMobile ? window.innerWidth / 2 : 50;
+                const direita = isMobile ? window.innerWidth / 2 : window.innerWidth - 50;
 
                 const isServicos = section.classList.contains("Servicos");
 
                 let x;
                 const meioY = (prevY + y) / 2;
 
-                if (isServicos) {
+                if (isServicos || isMobile) {
                     x = window.innerWidth / 2;
 
                     const curvaGrande = 200;
