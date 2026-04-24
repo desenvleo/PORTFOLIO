@@ -213,7 +213,7 @@ header ul a:hover::after {
     box-shadow: 2px 2px 8px 0px rgba(4, 25, 27, 0.795);
     padding: 3em;
     border-radius: 20px;
-    background-image: url(/newpiccc.png),
+    background-image: url(newpiccc.png),
         linear-gradient(45deg, rgba(1, 212, 142, 0.842), rgb(51, 10, 83), rgba(1, 212, 142, 0.842));
     background-position: right center;
     background-repeat: no-repeat;
